@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my site</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <h1>Welcome to the page</h1>
+    <div class="index">
+        <% for(el of data){ %>
+            <div class="post">
+                <h2> @<%= el.username %>
+                </h2>
+                <p id="id"> id : <%= el.id %>
+                </p>
+                <p>
+                    <%= el.content %>
+                </p>
+                <div class="links">
+                    <a href="http://localhost:8080/posts/<%= el.id %>">see in details</a>
+                    <a href="http://localhost:8080/posts/<%= el.id %>/edit">edit post</a>
+                    <form action="/posts/<%=el.id%>?_method=DELETE" method="post">
+                        <button class="delete">Delete Post</button>
+                    </form>
+                </div>
+            </div>
+            <% } %>
+    </div>
+
+
+
+
+    <button><a href="http://localhost:8080/posts/new" style="text-decoration: none"</a>Create new post</a></button>
+
+</body>
+
+</html>

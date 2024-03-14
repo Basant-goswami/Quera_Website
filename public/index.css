@@ -1,0 +1,50 @@
+body{
+  font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h2{
+  color: red;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+p{
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.post{
+  background-color: pink;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 4px;
+  min-height: 15vh;
+}
+
+#id{
+  font-size: 1rem;
+}
+.delete{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: blue;
+    font-size: 1rem;
+}
+
+button, button a{
+    background-color: rgb(69, 69, 252);
+    padding: 4px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 4px;
+    
+}
+.post a {
+    margin: 4px;
+}
+.links{
+    display: flex;
+}
